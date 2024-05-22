@@ -6,7 +6,7 @@ const Home = () => {
         <div className="px-4 md:px-8">
             <section className="flex flex-col md:flex-row items-center p-8 md:p-16">
                 <div className="md:w-1/3 flex justify-center">
-                    <img src="/ProfilePic.jpeg" alt="Profile" className="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover" />
+                    <img src="https://bpb-us-e1.wpmucdn.com/sites.harvard.edu/dist/6/480/files/2023/10/230919-0505-1-edited.jpg" alt="Profile" className="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover" />
                 </div>
                 <div className="md:w-2/3 md:ml-8 text-center md:text-left mt-8 md:mt-0">
                     <h2 className="text-2xl font-bold mb-2">PhD Candidate, Public Policy (Economics Track)</h2>

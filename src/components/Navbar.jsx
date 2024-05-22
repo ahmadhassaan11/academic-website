@@ -6,8 +6,8 @@ const Navbar = () => {
     <header className="bg-black text-white">
       <div className="container mx-auto flex justify-between items-center pl-8 pr-8">
         <div className="flex items-center">
-          <img src="/HLogo.jpeg" alt="Harvard Logo" className="h-8 mr-1" />
-          <h1>HARVARD UNIVERSITY</h1>
+          <img src="https://sites.harvard.edu/marcos-barrozo/wp-content/themes/harvard-flex/img/harvard-logo.svg" alt="Harvard Logo" className="h-6 mt-2" />
+          {/* <h1>HARVARD UNIVERSITY</h1> */}
         </div>
         <div>HARVARD.EDU</div>
       </div>
