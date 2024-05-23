@@ -4,13 +4,6 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
     <header className="bg-black text-white">
-      <div className="container mx-auto flex justify-between items-center pl-8 pr-8">
-        <div className="flex items-center">
-          <img src="https://sites.harvard.edu/marcos-barrozo/wp-content/themes/harvard-flex/img/harvard-logo.svg" alt="Harvard Logo" className="h-6 mt-2" />
-          {/* <h1>HARVARD UNIVERSITY</h1> */}
-        </div>
-        <div>HARVARD.EDU</div>
-      </div>
       <nav className="bg-gray-100 text-black pl-4 pr-4">
         <div className="container mx-auto flex justify-between items-center p-4">
           <h2 className="text-3xl font-bold">Marcos Barrozo</h2>
