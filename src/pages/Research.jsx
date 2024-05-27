@@ -7,7 +7,7 @@ const Research = () => {
       <section className="mb-8">
         <h2 className="text-2xl font-bold mb-2">Working Papers:</h2>
         <div className="mb-4">
-          <a className="text-xl font-semibold underline hover:text-cyan-600" href="https://hu-my.sharepoint.com/personal/mbarrozo_g_harvard_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmbarrozo%5Fg%5Fharvard%5Fedu%2FDocuments%2FResearch%2Fbarrozo%5Fjmp%2Epdf&parent=%2Fpersonal%2Fmbarrozo%5Fg%5Fharvard%5Fedu%2FDocuments%2FResearch&ga=1">Market Power and Carbon Emissions in the Amazon [JOB MARKET PAPER]</a>
+          <a className="text-xl font-semibold underline hover:text-maincolor" href="https://hu-my.sharepoint.com/personal/mbarrozo_g_harvard_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmbarrozo%5Fg%5Fharvard%5Fedu%2FDocuments%2FResearch%2Fbarrozo%5Fjmp%2Epdf&parent=%2Fpersonal%2Fmbarrozo%5Fg%5Fharvard%5Fedu%2FDocuments%2FResearch&ga=1">Market Power and Carbon Emissions in the Amazon [JOB MARKET PAPER]</a>
           <p>
             The beef cattle sector is the leading driver of deforestation worldwide and a major source of carbon emissions.
             In this paper, I study how market power in the cattle supply chain shapes production and emissions in the Brazilian Amazon.
