@@ -5,9 +5,9 @@ const Teaching = () => {
     <div className="p-8">
       {/* <h1 className="text-xl text-maincolor font-bold mb-4">Teaching</h1> */}
       <section className="mb-8">
-        <h2 className="text-lg font-bold mb-2">Teaching evaluations:</h2>
+        <h2 className="text-[19px] font-bold mb-2">Teaching evaluations:</h2>
         <div className="mb-4">
-          <h3 className="text-lg font-semibold hover:text-maincolor">
+          <h3 className="text-lg font-bold">
             The Environmental Economics of Developing Countries (Spring 2021 and 2022)
           </h3>
           <ul className="list-disc list-inside ml-5">
@@ -17,7 +17,7 @@ const Teaching = () => {
           </ul>
         </div>
         <div className="mb-4">
-          <h3 className="text-lg font-semibold hover:text-maincolor">
+          <h3 className="text-lg font-bold">
             The Political Economy of Globalization (Fall 2020 and 2021)
           </h3>
           <ul className="list-disc list-inside ml-5">
@@ -28,7 +28,7 @@ const Teaching = () => {
         </div>
       </section>
       <section className="mb-8">
-        <h2 className="text-lg font-bold mb-2 hover:text-maincolor">Teaching evaluations available upon request. Some quotes from the reports:</h2>
+        <h2 className="text-lg font-bold mb-2">Teaching evaluations available upon request. Some quotes from the reports:</h2>
         <ul className="list-disc list-inside ml-5">
           <li className="mb-4">
             “Marcos’s patience and willingness to work with students after class showed me that he really cared about how his students learned the material and what they were thinking about. His overall demeanor helped generate excitement for the topic as well as emphasize the implications of the findings on overall economic policy or global environmental health. Truly one of the best TF teachers I’ve had while I am at Harvard.”
