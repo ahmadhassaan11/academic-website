@@ -10,43 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3 
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3  
-      with:
-        node-version: '20' 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.16.0'
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Build project
-      run: npm run build
+      - name: Build project
+        run: npm run build
 
-    - name: Ensure gh-pages branch exists
-      run: |
-        git fetch origin
-        if git show-ref --verify --quiet refs/heads/gh-pages; then
-          echo "gh-pages branch exists."
-        else
-          echo "Creating gh-pages branch."
-          git checkout --orphan gh-pages
-          git reset --hard
-          git commit --allow-empty -m "Initial gh-pages commit"
-          git push origin gh-pages
-          git checkout -
-        fi
-
-    - name: Debug Git
-      run: |
-        git config --global user.email "ahmadullah943@gmail.com"
-        git config --global user.name "ahmadhassaan11"
-        git remote -v
-        git status
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
