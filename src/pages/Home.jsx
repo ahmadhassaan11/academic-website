@@ -11,7 +11,7 @@ const Home = () => {
                         alt="Profile Pic"
                         className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover mb-4"
                     />
-                    <h2 className="text-3xl font-bold mb-2">Marcos Barrozo</h2>
+                    <h2 className="text-3xl font-bold mb-2">Marcos Barrozo Test</h2>
                     <h3 className="text-xl">Assistant Professor of Economics</h3>
                     <h3 className="text-xl">DePaul University</h3>
                 </div>
