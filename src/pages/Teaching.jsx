@@ -5,7 +5,7 @@ const Teaching = () => {
     <div className="p-8">
       {/* <h1 className="text-xl text-maincolor font-bold mb-4">Teaching</h1> */}
       <section className="mb-8">
-        <h2 className="text-[19px] font-bold mb-2">Teaching evaluations:</h2>
+        <h2 className="text-[19px] font-bold mb-2">Courses taught:</h2>
         <div className="mb-4">
           <h3 className="text-lg font-bold">
             The Environmental Economics of Developing Countries (Spring 2021 and 2022)
