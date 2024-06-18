@@ -15,7 +15,7 @@ const Home = () => {
                     <h3 className="text-xl">Assistant Professor of Economics</h3>
                     <h3 className="text-xl">DePaul University</h3>
                 </div>
-                <div className="md:w-2/3 md:ml-8 text-center md:text-left">
+                <div className="mb-4 md:w-2/3 md:ml-8 text-left md:text-left">
                     <p className="mb-4">
                         I use tools from international economics and industrial organization to study environmental issues in developing countries. I'm a recent graduate of the PhD in Public Policy at Harvard University. I will join DePaul University as an Assistant Professor this coming fall.
                     </p>

@@ -9,7 +9,7 @@ const DropdownCard = ({ heading, titles, description }) => {
 
     return (
         <div className="pt-4">
-            <p className="hover:text-maincolor hover:underline">
+            <p className="">
                 {heading}
             </p>
             <div className="my-1 relative">
