@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const DropdownCard = ({ heading, titles, description }) => {
+const DropdownCard = ({ heading, acceptance, titles, description }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -12,6 +12,13 @@ const DropdownCard = ({ heading, titles, description }) => {
             <p className="">
                 {heading}
             </p>
+
+            {acceptance && (
+                <p style={{ fontStyle: 'italic', color: '#808080', marginTop: '5px' }}>
+                    {acceptance}
+                </p>
+            )}
+
             <div className="my-1 relative">
                 <button className="flex items-center justify-between w-full text-left text-md">
                     <span>
