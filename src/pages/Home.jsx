@@ -20,7 +20,7 @@ const Home = () => {
                         I use tools from international economics and industrial organization to study environmental issues in developing countries. I'm a recent graduate of the PhD in Public Policy at Harvard University. I will join DePaul University as an Assistant Professor this coming fall.
                     </p>
                     <p>
-                        You can find my CV <a href="https://drive.google.com/file/d/1-vfnzMnCRgfHiwVLFw3jXGmV_L1NxePE/view?usp=sharing" className="underline hover:text-maincolor">here</a> and my job market paper <a href="https://drive.google.com/file/d/1-MYrwK9pabu8YBjLupf5FivzQCzevrwW/view?usp=sharing" className="underline hover:text-maincolor">here</a>.
+                        You can find my CV <a href="https://drive.google.com/file/d/11LRC__fVnQGBWnCH7U7H2VrG88LFfvd9/view?usp=share_link" className="underline hover:text-maincolor">here</a> and my job market paper <a href="https://drive.google.com/file/d/1-MYrwK9pabu8YBjLupf5FivzQCzevrwW/view?usp=sharing" className="underline hover:text-maincolor">here</a>.
                     </p>
                     <h2 className="pt-4 text-lg font-bold text-left">Research</h2>
                     <DropdownCard
