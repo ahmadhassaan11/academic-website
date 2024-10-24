@@ -17,7 +17,7 @@ const Home = () => {
                 </div>
                 <div className="mb-4 md:w-2/3 md:ml-8 text-left md:text-left">
                     <p className="mb-4">
-                        I am an Assistant Professor of Economics at DePaul University. I work on environmental problems using tools from international trade and industrial organization.
+                        I am an Assistant Professor of Economics at DePaul University. I work on environmental problems using tools from international economics and industrial organization.
                     </p>
                     <p>
                         You can find my CV <a href="https://drive.google.com/file/d/10nEr5DhwjjrCMMdHtQnDnWDi1Pg9f_6a/view?usp=share_link" className="underline hover:text-maincolor">here</a>.
