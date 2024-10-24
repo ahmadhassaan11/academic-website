@@ -17,16 +17,16 @@ const Home = () => {
                 </div>
                 <div className="mb-4 md:w-2/3 md:ml-8 text-left md:text-left">
                     <p className="mb-4">
-                        I use tools from international economics and industrial organization to study environmental issues in developing countries. I'm a recent graduate of the PhD in Public Policy at Harvard University. I will join DePaul University as an Assistant Professor this coming fall.
+                        I am an Assistant Professor of Economics at DePaul University. I work on environmental problems using tools from international trade and industrial organization.
                     </p>
                     <p>
-                        You can find my CV <a href="https://drive.google.com/file/d/10nEr5DhwjjrCMMdHtQnDnWDi1Pg9f_6a/view?usp=share_link" className="underline hover:text-maincolor">here</a> and my job market paper <a href="https://drive.google.com/file/d/1-MYrwK9pabu8YBjLupf5FivzQCzevrwW/view?usp=sharing" className="underline hover:text-maincolor">here</a>.
+                        You can find my CV <a href="https://drive.google.com/file/d/10nEr5DhwjjrCMMdHtQnDnWDi1Pg9f_6a/view?usp=share_link" className="underline hover:text-maincolor">here</a>.
                     </p>
                     <h2 className="pt-4 text-lg font-bold text-left">Research</h2>
                     <DropdownCard
-                        heading="Market Power and Carbon Emissions in the Amazon"
+                        heading="Where is the Beef? Supply Chains and Carbon Emissions in the Amazon (my JMP)"
                         titles={[{ text: 'paper', link: 'https://drive.google.com/file/d/1-MYrwK9pabu8YBjLupf5FivzQCzevrwW/view?usp=sharing' }]}
-                        description="The beef cattle sector is the leading driver of deforestation worldwide and a major source of carbon emissions. In this paper, I study how market power in the cattle supply chain shapes production and emissions in the Brazilian Amazon. Intermediaries exert buyer (monopsony) power over farmers, but market structure varies geographically. Using rich transaction-level data, I find that large intermediaries extract monopsony markdowns on farmer prices in core regions, but the deforestation frontier is largely competitive. I estimate a quantitative spatial model of the cattle supply chain and find that monopsony power distorts output downward. This affects farmers negatively, but the greatest sources of emissions along the frontier remain unaffected. In counterfactual analysis, policies that target the largest firms or exporters are ineffective because they miss deforestation hotspots and burden farmers that already face market power. However, a combination of targeted production subsidies and a carbon tax can reallocate production away from the frontier and reduce emissions by a third while keeping beef production constant."
+                        description="Agricultural emissions have global consequences. When local enforcement is absent, governments have turned to indirect regulation, using tariffs or standards on agribusiness exporters. Focusing on the Brazilian Amazon, I find that exporter-focused policies are ineffective for a surprising reason: exporting firms are more productive and relatively clean. The most emissions-intensive production is processed by a competitive fringe of small intermediaries. I use rich data and a structural model to show that exporter-focused policies also distort production in regions most affected by intermediary monopsony power. Alternatively, policies that move output away from small and informal firms can both reduce emissions and increase food production."
                     />
                     <DropdownCard
                         heading="Fidelity in Zero-Deforestation Supply Chains (joint with M. Skidmore, H. Gibbs, L. Rausch)"
