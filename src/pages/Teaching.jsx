@@ -14,7 +14,6 @@ const Teaching = () => {
           </ul>
         </div>
       </section>
-    </div>
   );
 };
 
