@@ -7,7 +7,8 @@ const Teaching = () => {
       <section className="mb-8">
         <h2 className="text-[19px] font-bold mb-2">Courses taught:</h2>
         <ul className="list-disc list-inside ml-5">
-          <li>Empirical Industrial Organization (DePaul MS, 2025).</li>
+          <li>Environmental Economics (DePaul, 2026-).</li>
+          <li>Empirical Industrial Organization (DePaul MS, 2025-).</li>
           <li>Principles of Microeconomics (DePaul, 2024–).</li>
           <li>Environmental Economics in the Developing World (Harvard, 2021 and 2022).</li>
           <li>Political Economy of Globalization (Teaching Fellow at Harvard, 2020 and 2021).</li>
