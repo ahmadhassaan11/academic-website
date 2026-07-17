@@ -25,7 +25,7 @@ const Home = () => {
                     <h2 className="pt-4 text-lg font-bold text-left">Research</h2>
                     <DropdownCard
                         heading="Are Sustainability Pledges Anticompetitive? (w/ M. Skidmore)"
-                        titles={[{ text: 'paper', link: 'https://drive.google.com/file/d/1r_0QvTT2tW9UcLQBV51bpREIqyv3ztmz/view?usp=sharing' }]}
+                        titles={[{ text: 'paper', link: 'https://dx.doi.org/10.2139/ssrn.6953799' }]}
                         description="When there are gaps in government regulation, firms can cater to consumer environmental preferences through private governance initiatives, for example pledging to only source inputs from suppliers that meet certain criteria. But recent antitrust enforcement has claimed that such firms may illegally exert monopsony power as they exclude suppliers. We use theory to discuss the competitive effects of market-exclusion pledges, then apply it to the Amazon Soy Moratorium (ASM), an initiative by soy traders that has led to important deforestation reductions. Despite excluding noncompliant farmers, we find that the ASM has no significant effects on average farmgate prices. We also find that it induces higher entry by ASM signatory traders, which earn more on average. This evidence points to complementary economic gains to sustainability pledges, in addition to their environmental benefits."
                     />
                     <DropdownCard
