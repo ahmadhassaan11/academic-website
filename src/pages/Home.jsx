@@ -30,6 +30,7 @@ const Home = () => {
                     />
                     <DropdownCard
                         heading="Where is the Beef? Supply Chains and Carbon Emissions in the Amazon (my JMP)"
+                        acceptance="R&R, Review of Economic Studies"
                         titles={[{ text: 'paper', link: 'https://drive.google.com/file/d/1-MYrwK9pabu8YBjLupf5FivzQCzevrwW/view?usp=sharing' }]}
                         description="This paper studies environmental policy in settings where small and informal firms are prevalent, showing how policy shapes entry decisions and the resulting productivity distribution. I focus on the Brazilian Amazon’s cattle industry, the world’s leading driver of deforestation. Using rich data, I show that a large number of processing firms operate informally or only sell domestically, with notable spatial clustering by firm type. Using a quantitative model, I show that policies targeting only prominent (formal and exporting) firms can have adverse effects, reallocating production toward less efficient firms and high-emitting upstream suppliers. Ignoring this margin of firm heterogeneity overestimates emissions reductions and underestimates output losses more than two-fold. Alternative policies that better account for small and informal firms greatly reduce abatement costs."
                     />
