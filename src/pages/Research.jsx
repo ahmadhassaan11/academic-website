@@ -8,6 +8,10 @@ const Research = () => {
       <section className="mb-8">
         <h2 className="text-lg font-bold mb-2">Papers:</h2>
         <div className="mb-4">
+          <div className="pt-4">
+              <p>Does Market Power in Local Agricultural Markets Hinder Farmer Climate Change Adaptation? (w/ R. Kochhar, R. Song, J. Sun)</p>
+              <p className="my-1">[<span className="text-maincolor">draft available upon request</span>]</p>
+          </div>
           <DropdownCard
                         heading="Are Sustainability Pledges Anticompetitive? (w/ M. Skidmore)"
                         titles={[{ text: 'paper', link: 'https://dx.doi.org/10.2139/ssrn.6953799' }]}
