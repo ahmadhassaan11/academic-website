@@ -1,32 +1,39 @@
 import React from 'react';
 import DropdownCard from '../components/DropdownCard';
+import Teaching from './Teaching';
 
 const Home = () => {
     return (
-        <div className="px-4 md:px-8">
-            <section className="flex flex-col md:flex-row items-start md:items-center p-8 md:p-16">
-                <div className="md:w-1/3 flex flex-col items-center md:items-start mb-8 md:mb-0">
-                    <img
-                        src="https://bpb-us-e1.wpmucdn.com/sites.harvard.edu/dist/6/480/files/2023/10/230919-0505-1-edited.jpg"
-                        alt="Profile Pic"
-                        className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover mb-4"
-                    />
-                    <h2 className="text-3xl font-bold mb-2">Marcos Barrozo</h2>
-                    <h3 className="text-xl">Assistant Professor of Economics</h3>
-                    <h3 className="text-xl">DePaul University</h3>
+        <div className="homepage" id="top" tabIndex={-1}>
+            <header className="profile" aria-label="About Marcos Barrozo">
+                <img
+                    src="/ProfilePic.jpeg"
+                    alt="Marcos Barrozo"
+                    width="288"
+                    height="288"
+                    className="profile-photo"
+                />
+                <div className="profile-details">
+                    <h1>Marcos Barrozo</h1>
+                    <p className="profile-role">Assistant Professor of Economics</p>
+                    <p className="profile-university">DePaul University</p>
                 </div>
-                <div className="mb-4 md:w-2/3 md:ml-8 text-left md:text-left">
-                    <p className="mb-4">
+            </header>
+            <main id="main-content" className="main-content" tabIndex={-1}>
+                <div className="introduction">
+                    <p>
                         I am an Assistant Professor of Economics at DePaul University. I work on environmental problems using tools from international economics and industrial organization.
                     </p>
                     <p>
-                        You can find my CV <a href="https://drive.google.com/file/d/10nEr5DhwjjrCMMdHtQnDnWDi1Pg9f_6a/view?usp=share_link" className="underline hover:text-maincolor">here</a>.
+                        You can find my CV <a href="https://drive.google.com/file/d/10nEr5DhwjjrCMMdHtQnDnWDi1Pg9f_6a/view?usp=share_link" aria-label="View my CV">here</a>.
                     </p>
-                    <h2 className="pt-4 text-lg font-bold text-left">Research</h2>
-                    <div className="pt-4">
-                        <p>Does Market Power in Local Agricultural Markets Hinder Farmer Climate Change Adaptation? (w/ R. Kochhar, R. Song, J. Sun)</p>
-                        <p className="my-1">[<span className="text-maincolor">draft available upon request</span>]</p>
-                    </div>
+                </div>
+                <section id="research" className="content-section" aria-labelledby="research-heading" tabIndex={-1}>
+                    <h2 id="research-heading" className="section-heading">Research</h2>
+                    <article className="paper">
+                        <h3 className="paper-title">Does Market Power in Local Agricultural Markets Hinder Farmer Climate Change Adaptation? (w/ R. Kochhar, R. Song, J. Sun)</h3>
+                        <p className="draft-note">[<span>draft available upon request</span>]</p>
+                    </article>
                     <DropdownCard
                         heading="Are Sustainability Pledges Anticompetitive? (w/ M. Skidmore)"
                         titles={[{ text: 'paper', link: 'https://dx.doi.org/10.2139/ssrn.6953799' }]}
@@ -38,23 +45,23 @@ const Home = () => {
                         titles={[{ text: 'paper', link: 'https://drive.google.com/file/d/1-MYrwK9pabu8YBjLupf5FivzQCzevrwW/view?usp=sharing' }]}
                         description="This paper studies environmental policy in settings where small and informal firms are prevalent, showing how policy shapes entry decisions and the resulting productivity distribution. I focus on the Brazilian Amazon’s cattle industry, the world’s leading driver of deforestation. Using rich data, I show that a large number of processing firms operate informally or only sell domestically, with notable spatial clustering by firm type. Using a quantitative model, I show that policies targeting only prominent (formal and exporting) firms can have adverse effects, reallocating production toward less efficient firms and high-emitting upstream suppliers. Ignoring this margin of firm heterogeneity overestimates emissions reductions and underestimates output losses more than two-fold. Alternative policies that better account for small and informal firms greatly reduce abatement costs."
                     />
-                    
+
                     <DropdownCard
                         heading="The Rise and Fall of the Amazon Soy Moratorium (w/ L. Rausch, T. Reis, C. Mazzetti, M. Skidmore, H. Gibbs)"
                         acceptance="Science, 2026"
                         titles={[{ text: 'paper', link: 'https://www.science.org/doi/epdf/10.1126/science.aeg5368' }]}
                         description="The Amazon Soy Moratorium (ASM) is a voluntary multisectoral zero-deforestation pact, in which soy traders agreed to not source or finance soy on Amazon lands deforested after July 2008. Despite successes, most traders terminated their commitments under the ASM in early 2026, amid a series of legislative and administrative challenges. A coalition of Brazilian political parties and civil society organizations (CSOs) mobilized to defend the ASM, including petitioning the Brazilian Federal Supreme Court (STF) to intervene (ADI 7774 and related cases; table S1). Here, we describe how the end of the ASM could impose substantial costs for forests and the soy sector. The pending final STF decision may come too late to preserve the ASM, but broader implications of this case extend beyond the agreement itself to the viability of any voluntary supply-chain standards that include limits on deforestation and ecosystem conversion that are not explicitly specified by Brazilian legislation."
                     />
-                    
+
                     <DropdownCard
                         heading="Fidelity in Zero-Deforestation Supply Chains (w/ M. Skidmore, H. Gibbs, L. Rausch)"
                         acceptance="Environmental Research Letters, 2024"
                         titles={[{ text: 'paper', link: 'https://iopscience.iop.org/article/10.1088/1748-9326/ad7a0d' }]}
                         description="Supply chain governance (SCG) is an increasingly important approach to manage environmental protection and human rights in agricultural systems across the tropics. SCG helps relay the preferences of international consumers to producers and fills environmental policy gaps. Brazil's Zero-Deforestation Cattle Agreements (CA) are one of the longest-standing examples of SCG but shortcomings in implementation have reduced their conservation impacts. Chief among the reasons for their limited effect is that slaughterhouses monitor only the suppliers they buy from directly. This does not account for the complex supply network upstream of the direct sale, whose dynamics are also poorly understood.We provide the first comprehensive characterization of the strength and duration of cattle supply chain relationships based on animal transaction records from across the Brazilian Amazon. Whereas direct supply relationships (from ranchers to slaughterhouses) are relatively few and long-lasting, upstream relationships between ranchers are numerous and short-lived. Expanding monitoring to include these upstream suppliers increases the number of monitored transactions by an order of magnitude. However, 1% of the largest direct suppliers sell nearly half of cattle to CA slaughterhouses. More comprehensive upstream monitoring of only these prolific suppliers could greatly increase coverage at a fraction of the cost. While it may be challenging to monitor the entire supply network, significant advancements are within reach."
                     />
-                    
-                </div>
-            </section>
+                </section>
+                <Teaching />
+            </main>
         </div>
     );
 };

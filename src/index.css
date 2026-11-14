@@ -3,5 +3,263 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Merriweather', serif;
+  font-family: 'EB Garamond', serif;
+  font-size: 19px;
+  color: #1f2924;
+  background: #fff;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #006400;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex="-1"]:focus-visible {
+  outline: 2px solid #006400;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.site-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.homepage {
+  display: grid;
+  grid-template-columns: minmax(0, 288px) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(40px, 6vw, 88px);
+  width: min(100%, 1200px);
+  margin-inline: auto;
+  padding: 72px 40px 56px;
+}
+
+/* The top anchor is the whole page; keep focus rings on individual controls. */
+.homepage:focus {
+  outline: none;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  max-width: 288px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.profile h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+
+.profile-role,
+.profile-university {
+  font: inherit;
+}
+
+.main-content {
+  min-width: 0;
+}
+
+.introduction p + p {
+  margin-top: 16px;
+}
+
+.introduction a,
+.site-footer a {
+  text-decoration: underline;
+}
+
+.content-section {
+  margin-top: 32px;
+  scroll-margin-top: 28px;
+}
+
+.section-heading {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.paper + .paper {
+  margin-top: 24px;
+}
+
+.paper-title {
+  font: inherit;
+}
+
+.paper-acceptance {
+  color: #616961;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.draft-note {
+  color: #006400;
+  margin-top: 4px;
+}
+
+.paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-top: 4px;
+}
+
+.paper-separator {
+  white-space: pre;
+}
+
+.paper-actions button,
+.paper-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.6em;
+  color: #006400;
+}
+
+.paper-actions button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+}
+
+.paper-actions button:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.paper-abstract {
+  margin-top: 8px;
+  padding-left: 18px;
+  border-left: 3px solid #006400;
+}
+
+.course-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.course-list li + li {
+  margin-top: 8px;
+}
+
+.site-footer {
+  width: min(100%, 1120px);
+  margin: auto auto 0;
+  padding: 24px 0 28px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  color: #616961;
+}
+
+.site-footer p {
+  max-width: 760px;
+  overflow-wrap: anywhere;
+}
+
+.back-to-top {
+  flex-shrink: 0;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  transform: translateY(-200%);
+  background: #fff;
+  padding: 8px 12px;
+  z-index: 1;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (max-width: 1199px) {
+  .site-footer {
+    width: calc(100% - 80px);
+  }
+}
+
+@media (max-width: 899px) {
+  .homepage {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+    max-width: 760px;
+    padding-top: 40px;
+  }
+
+  .profile {
+    display: grid;
+    grid-template-columns: 176px minmax(0, 1fr);
+    column-gap: 28px;
+    align-items: center;
+  }
+
+  .profile-photo {
+    width: 176px;
+    margin: 0;
+  }
+
+  .profile h1 {
+    margin-bottom: 8px;
+  }
+
+  .site-footer {
+    max-width: 680px;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 539px) {
+  .homepage {
+    padding: 32px 24px 40px;
+    gap: 28px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 184px;
+    margin-bottom: 20px;
+  }
+
+  .site-footer {
+    width: calc(100% - 48px);
+    padding-bottom: 20px;
+  }
 }

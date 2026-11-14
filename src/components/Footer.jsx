@@ -2,10 +2,11 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="mt-auto text-gray-500 text-sm">
-      <div className="container mx-auto text-center">
-        <p>&copy; {new Date().getFullYear()} Marcos Barrozo. Please send comments or questions to mbarrozofilho@gmail.com</p>
-      </div>
+    <footer className="site-footer">
+      <p>&copy; {new Date().getFullYear()} Marcos Barrozo. Please send comments or questions to{' '}
+        <a href="mailto:mbarrozofilho@gmail.com">mbarrozofilho@gmail.com</a>
+      </p>
+      <a className="back-to-top" href="#top">Back to top ↑</a>
     </footer>
   );
 };

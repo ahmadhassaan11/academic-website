@@ -1,24 +1,24 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import Home from './pages/Home';
-import Research from './pages/Research';
-import Teaching from './pages/Teaching';
-import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function App() {
+  useEffect(() => {
+    // Apply incoming section links after React mounts. Subsequent anchors use
+    // native browser navigation, including keyboard focus and scroll behavior.
+    const section = document.getElementById(window.location.hash.slice(1));
+    if (section) {
+      section.scrollIntoView();
+      section.focus({ preventScroll: true });
+    }
+  }, []);
+
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/research" element={<Research />} />
-          <Route path="/teaching" element={<Teaching />} />
-        </Routes>
-        <Footer/>
-      </div>
-    </Router>
+    <div className="site-shell">
+      <a className="skip-link" href="#main-content">Skip to main content</a>
+      <Home />
+      <Footer />
+    </div>
   );
 }
 
